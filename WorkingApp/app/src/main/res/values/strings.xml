@@ -2,4 +2,15 @@
     <string name="app_name">WorkingApp</string>
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
+    <string name="course">Course</string>
+    <string-array name="course_arrays">
+        <item>BSBA</item>
+        <item>BEED</item>
+        <item>BSIT</item>
+        <item>BSN</item>
+    </string-array>
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+    <string name="btn_display">Display</string>
+    <string name="chk_scholar">Scholar</string>
 </resources>

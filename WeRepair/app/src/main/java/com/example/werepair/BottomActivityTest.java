@@ -17,21 +17,21 @@ public class BottomActivityTest extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
-                case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
-                    return true;
                 case R.id.navigation_dashboard:
-                    mTextMessage.setText(R.string.title_dashboard);
+                    //mTextMessage.setText(R.string.title_nearme);
                     return true;
                 case R.id.navigation_notifications:
-                    mTextMessage.setText(R.string.title_notifications);
+                    //mTextMessage.setText(R.string.title_dashboard);
                     return true;
-//                case R.id.navigation_messages:
-//                    mTextMessage.setText(R.string.title_messages);
-//                    return true;
-//                case R.id.navigation_profile:
-//                    mTextMessage.setText(R.string.title_profile);
-//                    return true;
+                case R.id.navigation_nearme:
+                    //mTextMessage.setText(R.string.title_notifications);
+                    return true;
+                case R.id.navigation_messages:
+                    mTextMessage.setText(R.string.title_messages);
+                    return true;
+                case R.id.navigation_profile:
+                    mTextMessage.setText(R.string.title_profile);
+                    return true;
             }
             return false;
         }
@@ -45,6 +45,9 @@ public class BottomActivityTest extends AppCompatActivity {
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
+
+        BottomNavigationViewHelper.disableShiftMode(navigation);
     }
 
 }

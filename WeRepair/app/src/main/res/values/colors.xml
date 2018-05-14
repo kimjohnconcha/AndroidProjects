@@ -6,5 +6,6 @@
     <color name="lightBlue"> #ff00ffff</color>
     <color name="white">#ffffff</color>
     <color name="appBackground">#1a1a1a</color>
+    <color name="listitemcolor">#0e0e0e</color>
     <color name="appText">#494a4b</color>
 </resources>

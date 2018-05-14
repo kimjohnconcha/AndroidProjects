@@ -1,6 +1,5 @@
 package com.example.werepair.Views.AppFragments;
 
-
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -19,9 +18,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-/**
- * A simple {@link Fragment} subclass.
- */
     public class RepairFragment extends Fragment implements AdapterView.OnItemClickListener {
 
         String[] menutitles;
@@ -37,32 +33,32 @@ import java.util.List;
             return inflater.inflate(R.layout.fragment_repair, null, false);
         }
 
-    @Override
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        Toast.makeText(getActivity(), menutitles[position], Toast.LENGTH_SHORT).show();
-    }
-
-    @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-
-        super.onActivityCreated(savedInstanceState);
-
-        menutitles = getResources().getStringArray(R.array.titles);
-        menuIcons = getResources().obtainTypedArray(R.array.icons);
-
-        rowItems = new ArrayList<RepairRowItem>();
-
-        for (int i = 0; i < menutitles.length; i++) {
-            RepairRowItem items = new RepairRowItem(menutitles[i], menuIcons.getResourceId(i, -1));
-            rowItems.add(items);
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            Toast.makeText(getActivity(), menutitles[position], Toast.LENGTH_SHORT).show();
         }
 
-        ListView listView = (ListView) getActivity().findViewById(R.id.repairList);
+        @Override
+        public void onActivityCreated(Bundle savedInstanceState) {
 
-        adapter = new RepairListitemAdapter(getActivity(), rowItems);
-        listView.setAdapter(adapter);
-        listView.setOnItemClickListener(this);
+            super.onActivityCreated(savedInstanceState);
+
+            menutitles = getResources().getStringArray(R.array.titles);
+            menuIcons = getResources().obtainTypedArray(R.array.icons);
+
+            rowItems = new ArrayList<RepairRowItem>();
+
+            for (int i = 0; i < menutitles.length; i++) {
+                RepairRowItem items = new RepairRowItem(menutitles[i], menuIcons.getResourceId(i, -1));
+                rowItems.add(items);
+            }
+
+            ListView listView = (ListView) getActivity().findViewById(R.id.repairList);
+
+            adapter = new RepairListitemAdapter(getActivity(), rowItems);
+            listView.setAdapter(adapter);
+            listView.setOnItemClickListener(this);
+
+        }
 
     }
-
-}

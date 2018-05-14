@@ -108,6 +108,45 @@
         <item>@drawable/rep3</item>
     </array>
 
+    <string-array name="dates">
+        <item>Just now</item>
+        <item>10 minutes ago</item>
+        <item>50 minutes ago</item>
+        <item>2 hours ago</item>
+        <item>8 hours ago</item>
+        <item>10 hours ago</item>
+        <item>Yesterday</item>
+        <item>Wednesday</item>
+        <item>Tuesday</item>
+        <item>Monday</item>
+    </string-array>
+
+    <string-array name="notitxt">
+        <item>Username invited you for a repair.</item>
+        <item>Username liked your profile.</item>
+        <item>Username sent you a message.</item>
+        <item>Username liked your profile.</item>
+        <item>Username sent you a message.</item>
+        <item>Username sent you a message.</item>
+        <item>Username liked your profile.</item>
+        <item>Your application has been accepted.</item>
+        <item>Username sent you a message.</item>
+        <item>Username invited you for a repair.</item>
+    </string-array>
+
+    <array name="proicons">
+        <item>@drawable/pro1</item>
+        <item>@drawable/pro2</item>
+        <item>@drawable/pro3</item>
+        <item>@drawable/pro4</item>
+        <item>@drawable/pro5</item>
+        <item>@drawable/pro6</item>
+        <item>@drawable/pro7</item>
+        <item>@drawable/pro8</item>
+        <item>@drawable/pro9</item>
+        <item>@drawable/pro10</item>
+    </array>
+
 
 
 

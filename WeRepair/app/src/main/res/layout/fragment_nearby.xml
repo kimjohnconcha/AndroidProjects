@@ -3,13 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/nearbyfrag"
     tools:context=".Views.AppFragments.NearbyFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textColor="@color/white"
-        android:text="Nearby Fragment" />
 
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/nearbyMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </FrameLayout>

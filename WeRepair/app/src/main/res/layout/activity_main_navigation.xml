@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:background="@color/appBackground"
     android:layout_height="match_parent"
-    tools:context=".BottomActivityTest">
+    tools:context=".Views.MainNavigation">
 
     <FrameLayout
         android:layout_width="match_parent"

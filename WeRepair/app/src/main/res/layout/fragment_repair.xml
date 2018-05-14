@@ -3,8 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".RepairFragment">
+    tools:context=".Views.AppFragments.RepairFragment">
 
     <ListView
         android:layout_width="match_parent"

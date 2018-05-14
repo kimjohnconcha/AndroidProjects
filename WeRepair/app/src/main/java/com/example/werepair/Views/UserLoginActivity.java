@@ -1,8 +1,10 @@
-package com.example.werepair;
+package com.example.werepair.Views;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.werepair.R;
 
 public class UserLoginActivity extends AppCompatActivity {
 

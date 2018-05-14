@@ -1,4 +1,4 @@
-package com.example.werepair;
+package com.example.werepair.Services;
 
 import android.annotation.SuppressLint;
 import android.support.design.internal.BottomNavigationItemView;

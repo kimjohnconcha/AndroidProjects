@@ -1,16 +1,21 @@
-package com.example.werepair;
+package com.example.werepair.Views;
 
-import android.graphics.Color;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
-import android.widget.FrameLayout;
-import android.widget.TextView;
 
-public class BottomActivityTest extends AppCompatActivity {
+import com.example.werepair.Views.AppFragments.MessageFragment;
+import com.example.werepair.Views.AppFragments.NearbyFragment;
+import com.example.werepair.Views.AppFragments.NotificationFragment;
+import com.example.werepair.Views.AppFragments.ProfileFragment;
+import com.example.werepair.Views.AppFragments.RepairFragment;
+import com.example.werepair.R;
+import com.example.werepair.Services.BottomNavigationViewHelper;
+
+public class MainNavigation extends AppCompatActivity {
 
     private RepairFragment repairFragment;
     private NotificationFragment notificationFragment;
@@ -53,7 +58,7 @@ public class BottomActivityTest extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bottom_test);
+        setContentView(R.layout.activity_main_navigation);
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
 

@@ -59,10 +59,12 @@ public class LoginActivuty extends AppCompatActivity {
 
     public void reset (View view)
     {
-        EditText editText_username = (EditText) findViewById(R.id.username);
-        EditText editText_password = (EditText) findViewById(R.id.password);
-        editText_username.getText().clear();
-        editText_password.getText().clear();
+//        EditText editText_username = (EditText) findViewById(R.id.username);
+//        EditText editText_password = (EditText) findViewById(R.id.password);
+//        editText_username.getText().clear();
+//        editText_password.getText().clear();
+
+        finish();
     }
 
 

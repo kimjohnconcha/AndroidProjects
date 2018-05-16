@@ -74,7 +74,7 @@ public class NearbyFragment extends Fragment{
                 googleMap.getUiSettings().setRotateGesturesEnabled(true);
 
                 // For dropping a marker at a point on the Map
-                LatLng sydney = new LatLng(Float.parseFloat("Lat"), Float.parseFloat("Long"));
+                LatLng sydney = new LatLng(Float.parseFloat("10.268979"), Float.parseFloat("124.006119"));
                 googleMap.addMarker(new MarkerOptions().position(sydney).title("Title").snippet("TitleName"));
 
                 // For zooming automatically to the location of the marker
@@ -155,6 +155,7 @@ public class NearbyFragment extends Fragment{
 //            case 1:
 //        }
 //    }
+
 
 
 }

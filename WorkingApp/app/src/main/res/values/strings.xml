@@ -13,4 +13,8 @@
     <string name="radio_female">Female</string>
     <string name="btn_display">Display</string>
     <string name="chk_scholar">Scholar</string>
+    <color name="red">#fd0315</color>
+    <color name="green">#079f00</color>
+    <color name="blue">#3026ff</color>
+    <color name="black">#000002</color>
 </resources>

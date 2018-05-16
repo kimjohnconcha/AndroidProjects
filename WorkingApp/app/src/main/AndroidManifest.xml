@@ -66,28 +66,39 @@
         <activity
             android:name=".LoginActivuty"
             android:label="Concha Corporation">
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".DisplayRegMessage"
             android:label="Concha Company Registration"
-            android:parentActivityName=".MainActivity">
-
-        </activity>
-
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".RegistrationActivity"
             android:label="Concha Company Registration">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".ContainerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".lineartest" />
+        <activity android:name=".Listcountry" />
+        <activity android:name=".DatePickerSample"></activity>
     </application>
 
 </manifest>

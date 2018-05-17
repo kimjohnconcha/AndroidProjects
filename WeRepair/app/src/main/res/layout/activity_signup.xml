@@ -22,7 +22,18 @@
             android:id="@+id/email_login_form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
             android:orientation="vertical">
+
+            <TextView
+                android:paddingBottom="50dp"
+                android:text="WeRepair"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="50dp"
+                android:textAlignment="center"/>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -113,6 +124,16 @@
                 android:text="Sign up"
                 android:textColorHint="@color/lightBlue"
                 android:textStyle="bold" />
+
+            <TextView android:text="Already have an Account? Sign in!"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:onClick="GotoLogin"
+                android:textAlignment="center"
+                android:textSize="17dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"/>
 
         </LinearLayout>
 

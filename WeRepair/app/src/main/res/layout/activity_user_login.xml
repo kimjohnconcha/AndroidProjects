@@ -13,31 +13,27 @@
     tools:context=".Views.UserLoginActivity">
 
 
-    <!-- Login progress -->
-    <ProgressBar
-        android:id="@+id/login_progress"
-        style="?android:attr/progressBarStyleLarge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:visibility="visible" />
-
-
     <ScrollView
         android:id="@+id/login_form"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
+            android:layout_marginTop="60dp"
             android:id="@+id/email_login_form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
-                android:layout_height="100dp"
-                android:layout_width="wrap_content"
-                android:src="@drawable/testlogo"/>
+            <TextView
+                android:paddingBottom="60dp"
+                android:text="WeRepair"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="50dp"
+                android:textAlignment="center"/>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -78,24 +74,33 @@
 
         </android.support.design.widget.TextInputLayout>
 
-    <Button
-        android:id="@+id/email_sign_in_button"
-        style="?android:textAppearanceSmall"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:onClick="NewLogin"
-        android:textColor="#ff00ffff"
-        android:background="@drawable/app_button"
-        android:text="Sign in test"
-        android:textColorHint="@color/lightBlue"
-        android:textStyle="bold" />
+        <Button
+            android:id="@+id/email_sign_in_button"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="NewLogin"
+            android:textColor="#ff00ffff"
+            android:background="@drawable/app_button"
+            android:text="Sign in"
+            android:textColorHint="@color/lightBlue"
+            android:textStyle="bold" />
 
+            <TextView android:text="Don't have an Account? Sign up!"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="17dp"
+                android:onClick="GotoSignup"
+                android:layout_width="match_parent"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"/>
 
         </LinearLayout>
 
-
-
     </ScrollView>
+
+
 
 </LinearLayout>

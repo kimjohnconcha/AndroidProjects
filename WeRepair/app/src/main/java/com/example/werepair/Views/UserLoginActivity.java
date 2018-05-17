@@ -1,5 +1,6 @@
 package com.example.werepair.Views;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -24,14 +25,11 @@ public class UserLoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_login);
-
-        System.out.print("here on login");
     }
 
     public void NewLogin(View view)
     {
         String URL = "http://192.168.1.5:3000/auth/login";
-
         Map<String, String> params = new HashMap();
         params.put("email", "testuser1@gmail.com");
         params.put("password", "12345678");
@@ -65,6 +63,16 @@ public class UserLoginActivity extends AppCompatActivity {
                 }
         );
 
-        requestQueue.add(jsonObjectRequest);
+        //requestQueue.add(jsonObjectRequest);
+
+        Intent intent = new Intent(this, MainNavigation.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+        UserLoginActivity.this.finish();
+    }
+
+    public void GotoSignup(View view) {
+        Intent signup = new Intent(this, SignupActivity.class);
+        startActivity(signup);
     }
 }

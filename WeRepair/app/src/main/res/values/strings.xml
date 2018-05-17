@@ -134,6 +134,19 @@
         <item>Username invited you for a repair.</item>
     </string-array>
 
+    <string-array name="messtxt">
+        <item>Are you available today?</item>
+        <item>Hi! Launch</item>
+        <item>Can I have you contact details?</item>
+        <item>Are you available on Monday?</item>
+        <item>Lets meetup?.</item>
+        <item>How are you?.</item>
+        <item>Dinner?</item>
+        <item>Are you available this Sunday?</item>
+        <item>Can you repair my AC?</item>
+        <item>Hello!</item>
+    </string-array>
+
     <array name="proicons">
         <item>@drawable/pro1</item>
         <item>@drawable/pro2</item>
@@ -146,8 +159,6 @@
         <item>@drawable/pro9</item>
         <item>@drawable/pro10</item>
     </array>
-
-
 
 
 </resources>

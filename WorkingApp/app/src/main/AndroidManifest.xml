@@ -89,7 +89,8 @@
             <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
             <!-- </intent-filter> -->
         </activity>
-        <activity android:name=".ContainerActivity">
+        <activity android:name=".ContainerActivity"
+            android:label="Concha">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

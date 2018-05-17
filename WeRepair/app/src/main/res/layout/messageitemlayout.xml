@@ -9,8 +9,7 @@
     android:layout_height="wrap_content">
 
     <de.hdodenhof.circleimageview.CircleImageView
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/imageView"
+        android:id="@+id/imageViewm"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_alignParentStart="true"
@@ -26,21 +25,26 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/textview"
+            android:id="@+id/messagetxt"
             android:layout_width="217dp"
             android:layout_height="wrap_content"
-            android:text="Name"
+            android:text="Hi how are you?"
             android:textColor="@color/white"
-            android:textSize="18sp"
+            android:textSize="15sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/messagedate"
             android:layout_width="210dp"
             android:layout_height="wrap_content"
-            android:text="Basak, Mandaue City"
-            android:textSize="15dp"
+            android:text="Yesterday"
+            android:textSize="13dp"
             android:textColor="@color/appText" />
 
     </LinearLayout>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/arrright" />
 </LinearLayout>

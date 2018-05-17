@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:visibility="gone" />
+        android:visibility="visible" />
 
 
     <ScrollView
@@ -76,20 +76,20 @@
                     android:theme="@style/EditTextTheme"
                     android:singleLine="true" />
 
-            </android.support.design.widget.TextInputLayout>
+        </android.support.design.widget.TextInputLayout>
 
-            <Button
-                android:id="@+id/email_sign_in_button"
-                style="?android:textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:onClick="NewLogin"
-                android:textColor="#ff00ffff"
-                android:background="@drawable/app_button"
-                android:text="@string/action_sign_in"
-                android:textColorHint="@color/lightBlue"
-                android:textStyle="bold" />
+    <Button
+        android:id="@+id/email_sign_in_button"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="NewLogin"
+        android:textColor="#ff00ffff"
+        android:background="@drawable/app_button"
+        android:text="Sign in test"
+        android:textColorHint="@color/lightBlue"
+        android:textStyle="bold" />
 
 
         </LinearLayout>

@@ -52,11 +52,11 @@
         <activity
             android:name=".Views.UserLoginActivity"
             android:theme="@style/AppTheme.NoActionBar">
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".Views.SignupActivity"
@@ -74,12 +74,12 @@
             android:label="@string/title_activity_bottom_test"
             android:theme="@style/AppTheme.NoActionBar">
 
-             <intent-filter>
-             <action android:name="android.intent.action.MAIN" />
+             <!--<intent-filter>-->
+             <!--<action android:name="android.intent.action.MAIN" />-->
 
 
-             <category android:name="android.intent.category.LAUNCHER" />
-             </intent-filter>
+             <!--<category android:name="android.intent.category.LAUNCHER" />-->
+             <!--</intent-filter>-->
         </activity>
         <activity android:name=".Views.DummyActivity">
 

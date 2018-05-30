@@ -48,6 +48,7 @@ public class UserLoginActivity extends AppCompatActivity {
                         try{
                             JSONObject user = response.getJSONObject("user");
                             String name = user.getString("name");
+                            // TODO: validation caching for global access
                             Log.e("Response user: ", name);
                         } catch (Exception ex) {
                             Log.e("Error ", ex.getMessage());

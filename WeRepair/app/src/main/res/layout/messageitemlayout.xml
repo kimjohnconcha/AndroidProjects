@@ -26,7 +26,7 @@
 
         <TextView
             android:id="@+id/messagetxt"
-            android:layout_width="217dp"
+            android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:text="Hi how are you?"
             android:textColor="@color/white"
@@ -35,7 +35,7 @@
 
         <TextView
             android:id="@+id/messagedate"
-            android:layout_width="210dp"
+            android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:text="Yesterday"
             android:textSize="13dp"
@@ -44,7 +44,8 @@
     </LinearLayout>
 
     <ImageView
-        android:layout_width="30dp"
-        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         android:src="@drawable/arrright" />
 </LinearLayout>

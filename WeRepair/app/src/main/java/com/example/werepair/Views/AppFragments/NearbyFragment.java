@@ -74,11 +74,18 @@ public class NearbyFragment extends Fragment{
                 googleMap.getUiSettings().setRotateGesturesEnabled(true);
 
                 // For dropping a marker at a point on the Map
-                LatLng sydney = new LatLng(Float.parseFloat("10.268979"), Float.parseFloat("124.006119"));
-                googleMap.addMarker(new MarkerOptions().position(sydney).title("Title").snippet("TitleName"));
+                LatLng mactan1 = new LatLng(Float.parseFloat("10.307527"), Float.parseFloat("124.008853"));
+                LatLng mactan2 = new LatLng(Float.parseFloat("10.303642"), Float.parseFloat("123.965852"));
+                LatLng mactan3 = new LatLng(Float.parseFloat("10.287660"), Float.parseFloat("123.968234"));
+                LatLng mactan4 = new LatLng(Float.parseFloat("10.283374"), Float.parseFloat("123.991129"));
+
+                googleMap.addMarker(new MarkerOptions().position(mactan1).title("Lycah").snippet("Looking for someone"));
+                googleMap.addMarker(new MarkerOptions().position(mactan2).title("Felix").snippet("Looking for repairs"));
+                googleMap.addMarker(new MarkerOptions().position(mactan3).title("Diego").snippet("Need expert opinion"));
+                googleMap.addMarker(new MarkerOptions().position(mactan4).title("Marj").snippet("Can someone repair my tv?"));
 
                 // For zooming automatically to the location of the marker
-                CameraPosition cameraPosition = new CameraPosition.Builder().target(sydney).zoom(12).build();
+                CameraPosition cameraPosition = new CameraPosition.Builder().target(mactan2).zoom(12).build();
                 googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition ));
             }
         });

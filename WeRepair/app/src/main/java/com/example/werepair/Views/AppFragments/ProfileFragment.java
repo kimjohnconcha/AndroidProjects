@@ -3,6 +3,8 @@ package com.example.werepair.Views.AppFragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +13,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.werepair.R;
+import com.example.werepair.Views.MainNavigation;
 
 
 /**
@@ -40,16 +43,24 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
         return v;
     }
 
-    public void AddRepairItems(View view) {
-        Log.d("add repair", "here");
-    }
-
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.addrepair:
                 Log.d("add repair", "here");
+                Fragment fragment = new AddRepairItemFragment();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.mainframe, fragment);
+                //fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
                 break;
         }
     }
+
+//    private void setFragmentView(Fragment fragment) {
+//        android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+//        fragmentTransaction.replace(R.id.mainframe, fragment);
+//        fragmentTransaction.commit();
+//    }
 }

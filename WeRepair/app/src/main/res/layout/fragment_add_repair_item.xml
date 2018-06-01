@@ -5,11 +5,43 @@
     android:layout_height="match_parent"
     tools:context=".Views.AppFragments.AddRepairItemFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textColor="@color/white"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/repairImage"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/name"
+            android:layout_below="@id/repairImage"
+            android:visibility="gone"
+            android:hint="Enter name" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:text="Upload item for repair"
+            android:id="@+id/choosebtn"
+            android:layout_marginTop="25dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/choosebtn"
+            android:text="Save Item"
+            android:id="@+id/uploadbtn"
+            android:layout_marginTop="25dp" />
+
+    </RelativeLayout>
 
 </FrameLayout>
